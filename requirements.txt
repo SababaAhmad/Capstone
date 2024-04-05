@@ -1,0 +1,12 @@
+requests
+pandas
+numpy
+yfinance
+scikit-learn
+statsmodels
+scipy
+keras
+tensorflow
+transformers
+nltk
+plotly
