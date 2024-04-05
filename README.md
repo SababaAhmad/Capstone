@@ -43,3 +43,6 @@ jupyter notebook Ensemble.ipynb
 Python Script: you can also run the Python script version of the project:
 python ensemble.py
 
+## Data Access
+1. Yahoo! Finance: The datasets for stock price data, trading volume and CBOE VIX time series were downloaded from Yahoo! Finance using the yfinance package. This is publicly available and does not require an API key.
+2. 
