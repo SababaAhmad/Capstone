@@ -45,4 +45,8 @@ python ensemble.py
 
 ## Data Access
 1. Yahoo! Finance: The datasets for stock price data, trading volume and CBOE VIX time series were downloaded from Yahoo! Finance using the yfinance package. This is publicly available and does not require an API key.
-2. 
+2. Nasdaq Data Link (formerly Quandl): The dataset for implied volatility was obtained from here using an API key.
+3. Financial Modeling Prep: The datasets for financial statements, stock grade, analyst ratings and recommendations, earnings surprise, dividends payments and declarations, and key metrics and ratios were obtained from here using an API key.
+4. AlphaVantage: The datasets for earnings call transcripts and company related news were obtained from here using an API key.
+5. Quiver Quantitative: The dataset for Congress trading activity was obtained from hre using an API key.
+6. Reddit: The dataset for social media sentiment was obtained from here by creating a Reddit instance with a personal Reddit account.
