@@ -1,6 +1,12 @@
 # MADS Capstone Project: A Multifactorial Analysis of Microsoft Corporation’s Stock Price Dynamics
 
 Welcome to the GitHub repository for my Capstone Project. This project aims to explore the impact of various factors on the stock price of Microsoft (MSFT).
+These factors include fundamental data, like financial statements, volatility, performance metrics and financial ratios, sentiment from news, social media and earnings call, Congress trades and technical indicators. The main Ensemble notebook is structures as follows:
+1. Imports and Installs
+2. Download and clean each type of data
+3. Join datastes together in a master dataframe
+4. Create Random Forest models to get feature importances
+5. Create predictive models (baseline, Random Forest and LSTM) to get next day stock price prediction
 
 ## Getting Started
 These instructions will guide you on how to set up your environment to run the project on your computer.
