@@ -32,7 +32,7 @@ Before running the code, ensure you have Python installed on your system. This p
    pip install -r requirements.txt
 
 ## Data
-The Ensemble.zip file contains the raw data required to run the notebook. Extract this zip file in the project directory to access the datasets.
+The Ensemble.zip file contains the data required to run the notebook. Extract this zip file in the project directory to access the datasets. Some files are raw (downloaded using API keys from the sources specified in the Data Access section). Other files contain code which is the output of functions with longer runtimes (such as those findBERT model, backwards elimination process, etc.). Some files are also the output results of models. Use pd.read_csv() to read the appropriate files in to the notebook in the specified cells, as stated in the comments of the Ensemble file. 
 
 ## Running the Code
 There are two main ways to run the project:
