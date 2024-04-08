@@ -1,7 +1,7 @@
 # MADS Capstone Project: A Multifactorial Analysis of Microsoft Corporation’s Stock Price Dynamics
 
 Welcome to the GitHub repository for my Capstone Project. This project aims to explore the impact of various factors on the stock price of Microsoft (MSFT).
-These factors include fundamental data, like financial statements, volatility, performance metrics and financial ratios, sentiment from news, social media and earnings call, Congress trades and technical indicators. The main Ensemble notebook is structures as follows:
+These factors include fundamental data, like financial statements, volatility, performance metrics and financial ratios, sentiment from news, social media and earnings call, Congress trades and technical indicators. The process for this project is structured as follows:
 1. Imports and Installs
 2. Download and clean each type of data
 3. Join datastes together in a master dataframe
@@ -35,13 +35,11 @@ Before running the code, ensure you have Python installed on your system. This p
 The Ensemble.zip file contains the data required to run the notebook. Extract this zip file in the project directory to access the datasets. Some files are raw (downloaded using API keys from the sources specified in the Data Access section). Other files contain code which is the output of functions with longer runtimes (such as those findBERT model, backwards elimination process, etc.). Some files are also the output results of models. Use pd.read_csv() to read the appropriate files in to the notebook in the specified cells, as stated in the comments of the Ensemble file. 
 
 ## Running the Code
-There are two main ways to run the project:
+The code can be run with a Jupyter notebook or with Google Colab. The collapsing sections feature of Colab may make it easier to navigate the code.
 
-Jupyter Notebook: if you prefer using Jupyter Notebooks, open Ensemble.ipynb:
-jupyter notebook Ensemble.ipynb
+Data_Processing.ipynb is the first notebook to run. This notebook get the raw datasets from CSV files (which were previously downloaded from the sources mentioned in the Data Access section using an API key) and cleans and pre-processes them. These datasets are then joined together in a Master DataFrame.
 
-Python Script: you can also run the Python script version of the project:
-python ensemble.py
+Models.ipynb is the second notebook to run. This notebook starts off with the Master DataFrame created in Data_Processing.ipynb and runs the various models on the data to obtain the top features and the price forecast.
 
 ## Data Access
 1. Yahoo! Finance: The datasets for stock price data, trading volume and CBOE VIX time series were downloaded from Yahoo! Finance using the yfinance package. This is publicly available and does not require an API key.
