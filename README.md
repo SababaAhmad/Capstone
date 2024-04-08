@@ -41,7 +41,7 @@ Data_Processing.ipynb is the first notebook to run. This notebook get the raw da
 
 Models.ipynb is the second notebook to run. This notebook starts off with the Master DataFrame created in Data_Processing.ipynb and runs the various models on the data to obtain the top features and the price forecast.
 
-Keep all the files from the Ensemble.zip file in the directory. Some cells (like finBERT model, Random Forest with Grid Search CV and Backwards Elimination) have long runtimes (+1hour). The output from these executions have been saved in CSV files, which are specified in the cell following the long-runtime cell with the line "<data> = pd.read_csv('<output from long-runtime cell>.csv')"
+Keep all the files from the Ensemble.zip file in the directory. Some cells (like finBERT model, Random Forest with Grid Search CV and Backwards Elimination) have long runtimes (+1hour). The output from these executions have been saved in CSV files, which are specified in the cell following the long-runtime cell with the line "_data object_ = pd.read_csv('_output from long-runtime cell_.csv')"
 
 ## Data Access
 1. Yahoo! Finance: The datasets for stock price data, trading volume and CBOE VIX time series were downloaded from Yahoo! Finance using the yfinance package. This is publicly available and does not require an API key.
